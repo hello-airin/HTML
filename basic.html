@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML</title>
 </head>
+<style>
+    a:hover{
+        color: yellow;
+        text-decoration: none;
+         back:transparent;
+    }
+    tr:nth-last-child(even){
+        background-color: brown;
+    }
+</style>
 <body>
     <h1 style="text-align: center;">HTML Tag</h1>
     <h3>Head tag</h3>
@@ -30,8 +40,8 @@
             <td>h1-h6</td>
         </tr>
         <tr>
-            <tfoot >
-                <td>2</td>
+            <tfoot>
+                <td colspan="2">Total:2</td>
             </tfoot>
         </tr>
     </table>
@@ -45,6 +55,55 @@
    <ins>Hira</ins><br/>
    <h4>Comments</h4>
    <!-- <p>This is paragraph</p> -->
-    
+   <h4>HTML Form</h4>
+   <form>
+    <fieldset>
+    <legend><strong>Personali</strong></legend>
+      <label for="fname">First Name :</label>
+      <input type="text" id="fname" name="fname"  value="John"><br>
+      <label for="lname">Last Name :</label>
+      <input type="text" id="lname" name="lname"  value="Doe"><br>
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email"><br>
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday">
+      <p>Gender</p>
+      <input type="radio" id="gen" name="der" value="Female">
+      <label for="gen">Female</label><br>
+      <input type="radio" id="gen" name="der" value="Male">
+      <label for="gen">Male</label><br>
+      <input type="radio" id="gen" name="der" value="Others">
+      <label for="gen">Others</label><br><br>
+      <label for="favcolor">Airin Akter Hira :</label>
+      <input type="color"id="favcolor"name="favcolor"><br>
+      <label for="img">image</label>
+      <input type="img" id="img" name="img"><br>
+      <label for="de">Deperment</label>
+      <select id="de" name="de">
+        <option value="Computer">Computer</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Food">Food</option>
+        <option value="Civil">Civil</option>
+      </select><br>
+      <label for="br">Browsers</label>
+      <input list="browsers">
+      <datalist id="browsers">
+        <option value="google">Google Chrome</option>
+        <option value="Mozilla Firefox">Mozilla Firefox</option>
+        <option value="Opera">Opera</option>
+      </datalist><br>
+      <textarea name="massage" rows="5" cols="20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illum, mollitia eum dicta libero nulla voluptatem? Aliquam, sequi quae quis consequatur quod ipsa aperiam corrupti optio similique cupiditate repudiandae fugit! Officia blanditiis rem quaerat ad labore accusantium nam neque, cumque, nulla suscipit dolores culpa quia ipsa sapiente! Saepe quas, deleniti itaque id fugiat repellat explicabo ullam consequatur aspernatur. Unde, quos. Porro assumenda sit maiores recusandae dignissimos adipisci earum repudiandae! Error neque eveniet culpa cumque placeat! Dolorum vero voluptate magni rem inventore placeat non? Sed voluptatem quia amet dolorum distinctio tempore, sunt, unde tempora nostrum non quos eveniet quaerat autem illum!</textarea><br>
+      <label for="Da">Date :</label>
+      <input type="date" id="Da" name="Da"><br>
+      <label for="w">week :</label>
+      <select id="w" name="w">
+        <option value="First-week">First-week</option>
+        <option value="Sceoned-week">Sceoned-week</option>
+        <option value="Three-week">Three-week</option>
+        <option value="Last-week">Last-week</option>  
+      </select>
+      
+    </fieldset>
+   </form>
 </body>
 </html>
